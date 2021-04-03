@@ -1,0 +1,33 @@
+
+
+.banner-icon{
+height: 5rem;
+}
+.loading-icon{
+margin: 0;
+transition-timing-function: ease-in;
+transition-duration: 3s;
+position: absolute;
+top: 15rem;
+left: 45%;
+transform: translate(-50%, -50%);
+color: red;
+animation: rotation 1s linear infinite;
+width: auto;
+}
+@media only screen and (max-width: 600px) {
+.banner-icon{
+height: 3rem;
+}
+.loading-icon{
+top: 5rem;
+}
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
